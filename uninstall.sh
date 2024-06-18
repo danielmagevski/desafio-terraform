@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Inicio da execução do script
-echo "Iniciando o script de desinstalacao..."
+echo "Iniciando o script de desinstalação..."
 
 # Alterando o diretorio para a pasta terraform
 cd ./terraform
