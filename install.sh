@@ -19,6 +19,7 @@ fi
 
 # Iniciar o container do LocalStack
 echo "Iniciando o LocalStack..."
+docker stop localstack
 docker run \
   --rm -dit \
   --name localstack \

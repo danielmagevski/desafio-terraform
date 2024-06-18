@@ -1,6 +1,6 @@
 # Desafio Terraform
 
-Este repositorio contem os recursos e scripts necessarios para implantar uma infraestrutura serverless utilizando Terraform em um ambiente Linux com Docker.
+Este repositorio contem os recursos e scripts necessarios para implantar uma infraestrutura serverless utilizando Terraform em um ambiente Linux com Docker e Terraform.
 
 ## Pre-requisitos
 
@@ -10,6 +10,9 @@ Este repositorio contem os recursos e scripts necessarios para implantar uma inf
 
 ## Teste Automatico
 
+O codigo já baixa a imagem do localstak e executa o terraform com init, fmt, validate e apply.
+Na desinstalacao ele executa o destroy do terraform, para a imagem do localstack.
+
 ### Como instalar
 
 Para configurar seu ambiente e instalar as dependencias necessarias, siga os passos abaixo:
@@ -17,6 +20,13 @@ Para configurar seu ambiente e instalar as dependencias necessarias, siga os pas
 ```bash
 chmod +x install.sh
 ./install.sh
+```
+
+### Como desisntalar
+
+```bash
+chmod +x uninstall
+./uninstall.sh
 ```
 
 ### Recursos Implementados
