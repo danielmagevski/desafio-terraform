@@ -25,7 +25,7 @@ chmod +x install.sh
 ### Como desisntalar
 
 ```bash
-chmod +x uninstall
+chmod +x uninstall.sh
 ./uninstall.sh
 ```
 
