@@ -1,9 +1,9 @@
 resource "aws_lambda_function" "echo_server" {
-  filename         = "lambda_function.zip"
+  filename         = "${path.module}./app/lambda_function.zip"
   function_name    = var.lambda_function_name
   role             = aws_iam_role.lambda_exec.arn
   handler          = "lambda_function.lambda_handler"
-  source_code_hash = filebase64sha256("lambda_function.zip")
+  source_code_hash = filebase64sha256("${path.module}./app/lambda_function.zip")
   runtime          = "python3.8"
 }
 
